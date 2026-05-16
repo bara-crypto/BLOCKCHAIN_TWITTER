@@ -1,0 +1,73 @@
+# ==============================================================================
+# GLOBAL & SYSTEM FILES (Applies across all folders)
+# ==============================================================================
+.DS_Store
+*.pem
+*.local
+.env*
+.env.local
+
+# Logs & Debugging
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Testing & Coverage
+coverage/
+coverage.json
+
+# Dependencies (Global catch-all for any nested node_modules)
+**/node_modules/
+.pnp
+.pnp.*
+
+# TypeScript
+*.tsbuildinfo
+
+
+# ==============================================================================
+# FRONTEND: youtuber-based-twitter-clone
+# ==============================================================================
+# Next.js build and production outputs
+youtuber-based-twitter-clone/.next/
+youtuber-based-twitter-clone/out/
+youtuber-based-twitter-clone/build/
+youtuber-based-twitter-clone/next-env.d.ts
+
+# Yarn Berry specific configurations (if applicable)
+youtuber-based-twitter-clone/.yarn/*
+!youtuber-based-twitter-clone/.yarn/patches
+!youtuber-based-twitter-clone/.yarn/plugins
+!youtuber-based-twitter-clone/.yarn/releases
+!youtuber-based-twitter-clone/.yarn/versions
+!youtuber-based-twitter-clone/.yarn/patches
+!youtuber-based-twitter-clone/.yarn/plugins
+
+# Vercel deployments
+youtuber-based-twitter-clone/.vercel/
+
+
+# ==============================================================================
+# SMART CONTRACTS: Smart_Contract
+# ==============================================================================
+# Hardhat compilation artifacts and cache
+Smart_Contract/cache/
+Smart_Contract/artifacts/
+
+# TypeChain bindings
+Smart_Contract/typechain/
+Smart_Contract/typechain-types/
+
+# Hardhat Ignition local deployments
+Smart_Contract/ignition/deployments/chain-31337/
+
+
+# ==============================================================================
+# SANITY CMS: studio
+# ==============================================================================
+# Sanity Studio build output and local CLI runtime
+studio/dist/
+studio/.sanity/
